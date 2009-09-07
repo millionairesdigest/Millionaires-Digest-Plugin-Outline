@@ -16,8 +16,9 @@ Developed for the CUNY Academic Commons. Visit http://commons.gc.cuny.edu to lea
 == Installation ==
 
 You have two installation options:
-1. Upload the `enhanced-buddypress-widgets` directory to your `/wp-content/plugins/` directory. From there, you can either activate the plugin on a blog-by-blog basis, or activate it sitewide.
-1. Upload the file `enhanced-buddypress-widgets.php` to your `/wp-content/mu-plugins` directory. It will automatically be activated on all your blogs. 
+
+* Upload the `enhanced-buddypress-widgets` directory to your `/wp-content/plugins/` directory. From there, you can either activate the plugin on a blog-by-blog basis, or activate it sitewide.
+* Upload the file `enhanced-buddypress-widgets.php` to your `/wp-content/mu-plugins` directory. It will automatically be activated on all your blogs. 
 
 
 == Changelog ==
