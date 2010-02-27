@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: boonebgorges, cuny.academic.commons
+Contributors: boonebgorges, cuny-academic-commons
 Tags: buddypress, widget, groups, members
 Requires at least: WPMU 2.8, BP 1.0
 Tested up to: WPMU 2.8.4a, BP 1.0.3
