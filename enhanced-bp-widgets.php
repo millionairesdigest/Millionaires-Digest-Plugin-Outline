@@ -4,7 +4,7 @@
 Plugin Name: Enhanced BuddyPress Widgets
 Plugin URI: http://dev.commons.gc.cuny.edu/2009/09/07/new-buddypress-plugin-enhanced-buddypress-widgets
 Description: Provides enhanced versions of BuddyPress's default Groups and Members widgets
-Version: 0.1
+Version: 0.2
 Author: Boone Gorges - CUNY Academic Commons
 Author URI: http://teleogistic.net
 */
@@ -28,62 +28,65 @@ Author URI: http://teleogistic.net
 
 
 
-
-function members_register_enhanced_widgets() {
-	register_widget("BP_Enhanced_Members_Widget");	
+function bp_enhanced_widgets_init() {
+	add_action('widgets_init', create_function('', 'return unregister_widget("BP_Core_Members_Widget");') );
+	add_action('widgets_init', create_function('', 'return register_widget("BP_Enhanced_Members_Widget");') );
+	add_action('widgets_init', create_function('', 'return unregister_widget("BP_Groups_Widget");') );
+	add_action('widgets_init', create_function('', 'return register_widget("BP_Enhanced_Groups_Widget");') );
 }
+add_action( 'plugins_loaded', 'bp_enhanced_widgets_init', 15 );
 
-add_action( 'widgets_init', 'members_register_enhanced_widgets' );
+
+
 
 
 class BP_Enhanced_Members_Widget extends WP_Widget {
 	
 	
 	function bp_enhanced_members_widget() {
-		$widget_ops = array('description' => __('Enhanced BP Widgets: Members. Use this instead of the standard BuddyPress Members widget.', 'bp-enhanced-groups-widget'));
-		$this->WP_Widget('bp_enhanced_members_widget', __('Members'), $widget_ops);
-		wp_enqueue_script( 'bp_core_widget_members-js', BP_PLUGIN_URL . '/bp-core/js/widget-members.js', array('jquery', 'jquery-livequery-pack') );		
-		wp_enqueue_style( 'bp_core_widget_members-css', BP_PLUGIN_URL . '/bp-core/css/widget-members.css' );
+		
+		parent::WP_Widget( false, $name = __( 'Members', 'buddypress' ) );
+		if ( is_active_widget( false, false, $this->id_base ) )
+			wp_enqueue_script( 'bp_core_widget_members-js', BP_PLUGIN_URL . '/bp-core/js/widget-members.js', array('jquery') );
 	}
 
 	function widget($args, $instance) {
 		global $bp;
 	    extract( $args );
 		
+		if ( !$instance['member_default'] )
+			$instance['member_default'] = 'active';
+		
 		echo $before_widget;
 		echo $before_title
 		   . $widget_name 
 		   . $after_title; ?>
 
-		<?php if ( bp_has_site_members( 'type=' . $instance['member_default'] .'&max=' . $instance['max_members'] ) ) : ?>
+		<?php if ( bp_has_members( 'user_id=0&type=' . $instance['member_default'] . '&max=' . $instance['max_members'] ) ) : ?>
 			<div class="item-options" id="members-list-options">
-				<img id="ajax-loader-members" src="<?php echo $bp->core->image_base ?>/ajax-loader.gif" height="7" alt="<?php _e( 'Loading', 'buddypress' ) ?>" style="display: none;" /> 
-				<a href="<?php echo site_url() . '/' . BP_MEMBERS_SLUG ?>" id="newest-members" <?php if ($instance['member_default'] == "newest") { ?> class="selected" <?php } ?>><?php _e( 'Newest', 'buddypress' ) ?></a> | 
-				<a href="<?php echo site_url() . '/' . BP_MEMBERS_SLUG ?>" id="recently-active-members" <?php if ($instance['member_default'] == "active") { ?> class="selected" <?php } ?>><?php _e( 'Active', 'buddypress' ) ?></a> | 
+				<span class="ajax-loader" id="ajax-loader-members"></span>
+				<a href="<?php echo site_url() . '/' . BP_MEMBERS_SLUG ?>" id="newest-members" <?php if ($instance['member_default'] == "newest") { ?> class="selected" <?php } ?>><?php _e( 'Newest', 'buddypress' ) ?></a> |
+				<a href="<?php echo site_url() . '/' . BP_MEMBERS_SLUG ?>" id="recently-active-members" <?php if ($instance['member_default'] == "active") { ?> class="selected" <?php } ?>><?php _e( 'Active', 'buddypress' ) ?></a> |
 				<a href="<?php echo site_url() . '/' . BP_MEMBERS_SLUG ?>" id="popular-members" <?php if ($instance['member_default'] == "popular") { ?> class="selected" <?php } ?>><?php _e( 'Popular', 'buddypress' ) ?></a>
 			</div>
 			
-			<ul id="members-list" class="item-list">
-				<?php while ( bp_site_members() ) : bp_the_site_member(); ?>
+		<ul id="members-list" class="item-list">
+				<?php while ( bp_members() ) : bp_the_member(); ?>
 					<li class="vcard">
 						<div class="item-avatar">
-							<a href="<?php bp_the_site_member_link() ?>"><?php bp_the_site_member_avatar() ?></a>
+							<a href="<?php bp_member_permalink() ?>"><?php bp_member_avatar() ?></a>
 						</div>
 
 						<div class="item">
-							<div class="item-title fn"><a href="<?php bp_the_site_member_link() ?>" title="<?php bp_the_site_member_name() ?>"><?php bp_the_site_member_name() ?></a></div>
+							<div class="item-title fn"><a href="<?php bp_member_permalink() ?>" title="<?php bp_member_name() ?>"><?php bp_member_name() ?></a></div>
 							<div class="item-meta"><span class="activity"><?php
 							
-							if ( $instance['member_default'] == 'newest') {
-									echo bp_core_get_last_activity( bp_get_the_site_member_registered(), __( 'registered %s ago', 'buddypress' ) );
-								}
-								if ( $instance['member_default'] == 'active')
-									bp_the_site_member_last_active();
-								if ( $instance['member_default'] == 'popular')
-									bp_the_site_member_total_friend_count();
-							
-							
-							
+							if ( $instance['member_default'] == 'newest')
+									bp_member_registered();								
+							if ( $instance['member_default'] == 'active')
+									bp_member_last_active();
+							if ( $instance['member_default'] == 'popular')
+									bp_member_total_friend_count();						
 							
 							 ?></span></div>
 						</div>
@@ -138,66 +141,53 @@ class BP_Enhanced_Members_Widget extends WP_Widget {
 
 
 
-
-
-
-
-
-
-
-
-function groups_register_enhanced_widgets() {
-	register_widget("BP_Enhanced_Groups_Widget");	
-}
-
-add_action( 'widgets_init', 'groups_register_enhanced_widgets' );
-
 class BP_Enhanced_Groups_Widget extends WP_Widget {
 	function bp_enhanced_groups_widget() {
-		$widget_ops = array('description' => __('Enhanced BP Widgets: Groups. Use this instead of the standard BuddyPress Groups widget.', 'bp-enhanced-groups-widget'));
-		$this->WP_Widget('bp_enhanced_groups_widget', __('Groups'), $widget_ops);
-	
-		//parent::WP_Widget( false, $name = 'Groups' );
-		wp_enqueue_script( 'groups_widget_groups_list-js', BP_PLUGIN_URL . '/bp-groups/js/widget-groups.js', array('jquery', 'jquery-livequery-pack') );		
-		wp_enqueue_style( 'groups_widget_members-css', BP_PLUGIN_URL . '/bp-groups/css/widget-groups.css' );		
+			parent::WP_Widget( false, $name = __( 'Groups', 'buddypress' ) );
+
+		if ( is_active_widget( false, false, $this->id_base ) )
+			wp_enqueue_script( 'groups_widget_groups_list-js', BP_PLUGIN_URL . '/bp-groups/js/widget-groups.js', array('jquery') );
 	}
 
 	function widget($args, $instance) {
 		global $bp;
 		
 	    extract( $args );
+		
 		echo $before_widget;
 		echo $before_title
 		   . $widget_name 
 		   . $after_title; ?>
 		
-		<?php if ( bp_has_site_groups( 'type=' . $instance['group_default'] . '&max=' . $instance['max_groups'] ) ) : ?>
+		
+		<?php if ( bp_has_groups( 'type=' . $instance['group_default'] . '&max=' . $instance['max_groups'] ) ) : ?>
 			<div class="item-options" id="groups-list-options">
-				<img id="ajax-loader-groups" src="<?php echo $bp->groups->image_base ?>/ajax-loader.gif" height="7" alt="<?php _e( 'Loading', 'buddypress' ) ?>" style="display: none;" /> 
-				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="newest-groups" <?php if ($instance['group_default'] == "newest") { ?> class="selected" <?php } ?>><?php _e("Newest", 'buddypress') ?></a> | 
-				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="recently-active-groups"<?php if ($instance['group_default'] == "active") { ?> class="selected" <?php } ?>><?php _e("Active", 'buddypress') ?></a> | 
-				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="popular-groups"<?php if ($instance['group_default'] == "popular") { ?> class="selected" <?php } ?>><?php _e("Popular", 'buddypress') ?></a>
+				<span class="ajax-loader" id="ajax-loader-groups"></span>
+				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="newest-groups" <?php if ($instance['group_default'] == "newest") { ?> class="selected" <?php } ?>><?php _e("Newest", 'buddypress') ?></a> |
+				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="recently-active-groups" <?php if ($instance['group_default'] == "active") { ?> class="selected" <?php } ?>><?php _e("Active", 'buddypress') ?></a> |
+				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="popular-groups" class="selected" <?php if ($instance['group_default'] == "popular") { ?> class="selected" <?php } ?>><?php _e("Popular", 'buddypress') ?></a>
+			
 			</div>
 			
 			<ul id="groups-list" class="item-list">
-				<?php while ( bp_site_groups() ) : bp_the_site_group(); ?>
+				<?php while ( bp_groups() ) : bp_the_group(); ?>
 					<li>
 						<div class="item-avatar">
-							<a href="<?php bp_the_site_group_link() ?>"><?php bp_the_site_group_avatar_thumb() ?></a>
+							<a href="<?php bp_group_permalink() ?>"><?php bp_group_avatar_thumb() ?></a>
 						</div>
 
+	
 						<div class="item">
-							<div class="item-title"><a href="<?php bp_the_site_group_link() ?>" title="<?php bp_the_site_group_name() ?>"><?php bp_the_site_group_name() ?></a></div>
+							<div class="item-title"><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a></div>
 							<div class="item-meta"><span class="activity">
 							<?php
 								if ( $instance['group_default'] == 'newest') {
-									echo "Created ";
-									bp_the_site_group_date_created();
+									echo "Created " . bp_get_group_date_created() . " ago";
 								}
 								if ( $instance['group_default'] == 'active')
-									bp_the_site_group_last_active();
+									echo bp_get_group_last_active();
 								if ( $instance['group_default'] == 'popular')
-									bp_the_site_group_member_count();
+									echo bp_group_member_count();
 								
 							?></span></div>
 						</div>
