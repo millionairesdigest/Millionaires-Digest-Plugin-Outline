@@ -30,3 +30,6 @@ You have two installation options:
 
 = 0.2 =
 * Updated for BuddyPress 1.2
+
+= 0.2.1 =
+* Loader file created to ensure that BP doesn't crash on upgrade
