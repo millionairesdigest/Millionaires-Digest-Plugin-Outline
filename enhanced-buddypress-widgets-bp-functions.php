@@ -138,7 +138,7 @@ class BP_Enhanced_Groups_Widget extends WP_Widget {
 				<span class="ajax-loader" id="ajax-loader-groups"></span>
 				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="newest-groups" <?php if ($instance['group_default'] == "newest") { ?> class="selected" <?php } ?>><?php _e("Newest", 'buddypress') ?></a> |
 				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="recently-active-groups" <?php if ($instance['group_default'] == "active") { ?> class="selected" <?php } ?>><?php _e("Active", 'buddypress') ?></a> |
-				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="popular-groups" class="selected" <?php if ($instance['group_default'] == "popular") { ?> class="selected" <?php } ?>><?php _e("Popular", 'buddypress') ?></a>
+				<a href="<?php echo site_url() . '/' . $bp->groups->slug ?>" id="popular-groups" <?php if ($instance['group_default'] == "popular") { ?> class="selected" <?php } ?>><?php _e("Popular", 'buddypress') ?></a>
 			
 			</div>
 			
