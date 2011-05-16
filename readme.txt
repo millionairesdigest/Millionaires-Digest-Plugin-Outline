@@ -2,7 +2,7 @@
 Contributors: boonebgorges, cuny-academic-commons
 Tags: buddypress, widget, groups, members
 Requires at least: WordPress 2.9, BP 1.2RC
-Tested up to: WPMU 2.9.1.1, BP 1.2.1
+Tested up to: WP 3.1, BP 1.2.8
 Stable tag: trunk
 
 Provides enhanced version of BuddyPress's core Groups and Members widgets
