@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Enhanced BuddyPress Widgets
-Plugin URI: http://dev.commons.gc.cuny.edu/2009/09/07/new-buddypress-plugin-enhanced-buddypress-widgets
-Description: Provides enhanced versions of BuddyPress's default Groups and Members widgets
-Version: 0.2.1
-Author: Boone Gorges - CUNY Academic Commons
-Author URI: http://teleogistic.net
+Plugin Name: Millionaire's Digest Widgets
+Description: Add widgets specifically created for the Millionaire's Digest made by the Founder & CEO of the Millionaire's Digest
+Version: 1.0.0
+Author: K&L (Founder of the Millionaire's Digest)
+Author URI: https://millionairedigest.com/
+
 */
 
 /*  Copyright 2009  Boone Gorges - CUNY Academic Commons  (email : boonebgorges@gmail.com)
