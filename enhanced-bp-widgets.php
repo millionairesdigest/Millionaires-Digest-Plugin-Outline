@@ -25,10 +25,38 @@ Author URI: http://teleogistic.net
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+//Use class New_Millionaires_Digest_Widgets
+Class My_New_Millionaires_Digest_Widgets {
+    
+    private static $instance;
+    private $path;
+    
+    private function __construct() {
 
+        $this->path = plugin_dir_path( __FILE__ );
+        $this->setup();
 
-function enhanced_buddypress_widgets_init() {
-	require( dirname( __FILE__ ) . '/enhanced-buddypress-widgets-bp-functions.php' );
+    }
+    
+    public static function get_instance() {
+
+        if ( ! isset( self::$instance ) ) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+
+    }
+    
+    private function setup() {
+
+        add_action( 'bp_loaded', array( $this, 'load' ) );
+        add_action( 'widgets_init', array( $this, 'register_widget' ), 10 );
+    }
+
+    //Load the Widgets (Another words, list all of the file paths you created in this plugin, and add them here.)
+    public function load() {
+	    
+	    require_once $this->path . 'enhanced-buddypress-widgets-bp-functions.php';
+    }
 }
-add_action( 'bp_init', 'enhanced_buddypress_widgets_init' );
-?>
+My_New_Millionaires_Digest_Widgets::get_instance();
