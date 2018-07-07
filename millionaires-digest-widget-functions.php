@@ -1,11 +1,11 @@
 <?php
 
 /* Register All of the New Widgets We Created */
-function bp_enhanced_widgets_init() {
+function add_new_millionaires_digest_widgets() {
 	add_action('widgets_init', create_function('', 'eturn register_widget("AuthorRecentArticles");') );
 	add_action('widgets_init', create_function('', 'return register_widget("AuthorRecentVideos");') );
 }
-add_action( 'plugins_loaded', 'bp_enhanced_widgets_init', 15 );
+add_action( 'plugins_loaded', 'add_new_millionaires_digest_widgets', 15 );
 
 
 
