@@ -1,8 +1,8 @@
 <?php
 
-
+/* Register All of the New Widgets We Created */
 function bp_enhanced_widgets_init() {
-	add_action('widgets_init', create_function('', 'return register_widget("AuthorRecentArticles");') );
+	add_action('widgets_init', create_function('', 'eturn register_widget("AuthorRecentArticles");') );
 	add_action('widgets_init', create_function('', 'return register_widget("AuthorRecentVideos");') );
 }
 add_action( 'plugins_loaded', 'bp_enhanced_widgets_init', 15 );
@@ -10,7 +10,9 @@ add_action( 'plugins_loaded', 'bp_enhanced_widgets_init', 15 );
 
 
 
+/* Create All of the New Widgets */
 
+/* Author Recent Articles */
 class AuthorRecentArticles extends WP_Widget {
 	//Constructor
 	function AuthorRecentArticles() {
@@ -145,6 +147,7 @@ class AuthorRecentArticles extends WP_Widget {
  } // class end tag
 
 
+/* Author Recent Videos */
 class AuthorRecentVideos extends WP_Widget {
 	//Constructor
 	function AuthorRecentVideos() {
