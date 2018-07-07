@@ -26,7 +26,7 @@ Author URI: http://teleogistic.net
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 //Use class New_Millionaires_Digest_Widgets
-Class My_New_Millionaires_Digest_Widgets {
+Class New_Millionaires_Digest_Widgets {
     
     private static $instance;
     private $path;
@@ -56,7 +56,7 @@ Class My_New_Millionaires_Digest_Widgets {
     //Load the Widgets (Another words, list all of the file paths you created in this plugin, and add them here.)
     public function load() {
 	    
-	    require_once $this->path . 'enhanced-buddypress-widgets-bp-functions.php';
+	    require_once $this->path . 'new-millionaires-digest-widget-functions.php';
     }
 }
-My_New_Millionaires_Digest_Widgets::get_instance();
+New_Millionaires_Digest_Widgets::get_instance();
