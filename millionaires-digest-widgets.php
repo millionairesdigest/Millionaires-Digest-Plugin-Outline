@@ -56,7 +56,7 @@ Class New_Millionaires_Digest_Widgets {
     //Load the Widgets (Another words, list all of the file paths you created in this plugin, and add them here.)
     public function load() {
 	    
-	    require_once $this->path . 'new-millionaires-digest-widget-functions.php';
+	    require_once $this->path . 'millionaires-digest-widget-functions.php';
     }
 }
 New_Millionaires_Digest_Widgets::get_instance();
