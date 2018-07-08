@@ -102,7 +102,7 @@ class AuthorRecentArticles extends WP_Widget {
 		<?php if ( $title ) 
 			{
 				$author = get_the_author_meta( 'display_name', $authordata->ID );
-				$title = str_replace( '[author]', $author, $title );
+				$title = str_replace( '[Author]', $author, $title );
 				echo $before_title . $title . $after_title; 
 			}
 		?>
@@ -244,7 +244,7 @@ class AuthorRecentVideos extends WP_Widget {
 		<?php if ( $title ) 
 			{
 				$author = get_the_author_meta( 'display_name', $authordata->ID );
-				$title = str_replace( '[author]', $author, $title );
+				$title = str_replace( '[Author]', $author, $title );
 				echo $before_title . $title . $after_title; 
 			}
 		?>
@@ -383,7 +383,7 @@ class AuthorRecentPhotos extends WP_Widget {
 		<?php if ( $title ) 
 			{
 				$author = get_the_author_meta( 'display_name', $authordata->ID );
-				$title = str_replace( '[author]', $author, $title );
+				$title = str_replace( '[Author]', $author, $title );
 				echo $before_title . $title . $after_title; 
 			}
 		?>
@@ -522,7 +522,7 @@ class AuthorRecentMusic extends WP_Widget {
 		<?php if ( $title ) 
 			{
 				$author = get_the_author_meta( 'display_name', $authordata->ID );
-				$title = str_replace( '[author]', $author, $title );
+				$title = str_replace( '[Author]', $author, $title );
 				echo $before_title . $title . $after_title; 
 			}
 		?>
