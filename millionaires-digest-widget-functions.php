@@ -14,11 +14,7 @@ function add_new_millionaires_digest_widgets() {
 	add_action('widgets_init', create_function('', 'return register_widget("BuddyPress_Posts_Widget");') );
 }
 add_action( 'plugins_loaded', 'add_new_millionaires_digest_widgets', 15 );
-
-
-
 /* Create All of the New Widgets */
-
 /* Author Recent Articles */
 class AuthorRecentArticles extends WP_Widget {
 	//Constructor
@@ -64,7 +60,6 @@ class AuthorRecentArticles extends WP_Widget {
 		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display article date?' ); ?></label></p>
 	<?php	
 	}
-
 	//Widget Update
 	function update( $new_instance, $old_instance ) {
 		$old_instance['title'] = $new_instance['title'];		
@@ -75,7 +70,6 @@ class AuthorRecentArticles extends WP_Widget {
 		$old_instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
 		return $old_instance;
 	}
-
 	//Widget Display
 	function widget( $args, $instance ) {
 		extract( $args );
@@ -152,9 +146,6 @@ class AuthorRecentArticles extends WP_Widget {
 		} // single page condition ends here
 	}// widget function end here
  } // class end tag
-
-
-
 /* Author Recent Videos */
 class AuthorRecentVideos extends WP_Widget {
 	//Constructor
@@ -205,7 +196,6 @@ class AuthorRecentVideos extends WP_Widget {
 		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display video date?' ); ?></label></p>
 	<?php	
 	}
-
 	//Widget Update
 	function update( $new_instance, $old_instance ) {
 		$old_instance['title'] = $new_instance['title'];		
@@ -217,7 +207,6 @@ class AuthorRecentVideos extends WP_Widget {
 		$old_instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
 		return $old_instance;
 	}
-
 	//Widget Display
 	function widget( $args, $instance ) {
 		extract( $args );
@@ -291,9 +280,6 @@ class AuthorRecentVideos extends WP_Widget {
 		} // single page condition ends here
 	}// widget function end here
  } // class end tag
-
-
-
 /* Author Recent Photos */
 class AuthorRecentPhotos extends WP_Widget {
 	//Constructor
@@ -344,7 +330,6 @@ class AuthorRecentPhotos extends WP_Widget {
 		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display photo date?' ); ?></label></p>
 	<?php	
 	}
-
 	//Widget Update
 	function update( $new_instance, $old_instance ) {
 		$old_instance['title'] = $new_instance['title'];		
@@ -356,7 +341,6 @@ class AuthorRecentPhotos extends WP_Widget {
 		$old_instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
 		return $old_instance;
 	}
-
 	//Widget Display
 	function widget( $args, $instance ) {
 		extract( $args );
@@ -430,9 +414,6 @@ class AuthorRecentPhotos extends WP_Widget {
 		} // single page condition ends here
 	}// widget function end here
  } // class end tag
-
-
-
 /* Author Recent Music */
 class AuthorRecentMusic extends WP_Widget {
 	//Constructor
@@ -483,7 +464,6 @@ class AuthorRecentMusic extends WP_Widget {
 		<label for="<?php echo $this->get_field_id( 'show_date' ); ?>"><?php _e( 'Display song date?' ); ?></label></p>
 	<?php	
 	}
-
 	//Widget Update
 	function update( $new_instance, $old_instance ) {
 		$old_instance['title'] = $new_instance['title'];		
@@ -495,7 +475,6 @@ class AuthorRecentMusic extends WP_Widget {
 		$old_instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
 		return $old_instance;
 	}
-
 	//Widget Display
 	function widget( $args, $instance ) {
 		extract( $args );
@@ -569,9 +548,6 @@ class AuthorRecentMusic extends WP_Widget {
 		} // single page condition ends here
 	}// widget function end here
  } // class end tag
-
-
-
 /* BuddyPress User Info */
 class BuddyPress_User_Info_Widget extends WP_Widget {
 	public function __construct() {
@@ -672,8 +648,6 @@ class BuddyPress_User_Info_Widget extends WP_Widget {
 		}
 	}
 }
-
-
 /* BuddyPress Author Widget  */
 class BuddyPress_Author_Widget extends WP_Widget {
 	public function __construct() {
@@ -804,7 +778,6 @@ class BuddyPress_Author_Widget extends WP_Widget {
 		echo $op;
 	}
 }
-
 //Last but not least, get the author ID for the current page/post
 function millionairesdigest_get_blog_author_id() {
 	//If this is a single user blog, admin will not need this widgets as Bp profile for blogs will do that
@@ -821,9 +794,6 @@ function millionairesdigest_get_blog_author_id() {
 	}
 	return $author_id;
 }
-
-
-
 /* BuddyPress My Groups */
 class BP_My_Groups_Widget extends WP_Widget {
 	
@@ -834,13 +804,10 @@ class BP_My_Groups_Widget extends WP_Widget {
 			array( 'description' => __( 'Display the groups of the currently displayed BuddyPress user if on or viewing their profile.', 'text_domain' ) )
 		);
 	}
-
 	function widget($args, $instance) {
 		global $bp;
-
 	    extract( $args );
 		$title = apply_filters('widget_title', empty($instance['title'])?__('My Groups','buddypress'):$instance['title']);
-
 		echo $before_widget;
 		echo $before_title
 		   . $title
@@ -881,14 +848,11 @@ class BP_My_Groups_Widget extends WP_Widget {
 		<?php echo $after_widget; ?>
 	<?php
 	}
-
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
-
 		return $instance;
 	}
-
 	function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, array( 'title' => '' ) );
 		$title = esc_attr( $instance['title'] );
@@ -898,9 +862,6 @@ class BP_My_Groups_Widget extends WP_Widget {
 	<?php
 	}
 }
-
-
-
 /* BuddyPress Extended Widget Options */
 function bpew_load(){
     // display our own fields
@@ -913,7 +874,6 @@ function bpew_load(){
     add_filter('widget_display_callback', 'bpew_extend_display', 10, 3);
 }
 add_action('bp_init', 'bpew_load');
-
 /* Handlers */
 function bpew_extend_form($class, $return, $instance) {
     echo '<hr /><p>'.__('Display the widget if it satisfies one or more of the BuddyPress-specific options below:','bpew').'</p>';
@@ -943,12 +903,10 @@ function bpew_extend_form($class, $return, $instance) {
     add_action('bpew_extend_form', $class, $return, $instance);
     return $return;
 }
-
 function bpew_extend_update($instance, $new_instance, $old_instance, $this) {
     $new_instance = apply_filters('bpew_extend_update', $new_instance, $old_instance, $instance, $this);
     return $new_instance;
 }
-
 function bpew_extend_display($instance, $this, $args) {
     if(empty($instance['bp_component_type']))
         return $instance;
@@ -989,7 +947,6 @@ function bpew_extend_display($instance, $this, $args) {
     && explode(',', $instance['bp_component_ids'])){
         return $instance;
     }
-
     // Display on specific profile pages
     if($instance['bp_component_type'] == 'members' && bp_displayed_user_id()
     && in_array(bp_displayed_user_id(), explode(',', $instance['bp_component_ids']))){
@@ -1010,9 +967,6 @@ function bpew_extend_display($instance, $this, $args) {
     return false;
 }
 add_action('bp_init', 'bpew_load');
-
-
-
 /* BuddyPress Recent Profile Visitors */
 class Recent_Profile_Visitors_Widget extends WP_Widget {
 	function __construct() {
@@ -1043,7 +997,6 @@ public function widget( $args, $instance ) {
 	echo do_shortcode( '[bp-visitors-recent-visitors]', 'recent_profile_visitors_widget_domain' );
 	echo $args['after_widget'];
 }
-
 // Widget Backend 
 public function form( $instance ) {
 	if ( isset( $instance[ 'title' ] ) ) {
@@ -1068,9 +1021,6 @@ public function update( $new_instance, $old_instance ) {
 	return $instance;
 	}
 } // Class recent_profile_visitors_widget ends here
-
-
-
 /* BuddyPress Total Friends Count */
 class Total_Friends_Widget extends WP_Widget {
   public function __construct() {
@@ -1126,9 +1076,6 @@ class Total_Friends_Widget extends WP_Widget {
         return $instance;
     }
 }
-
-
-
 /* BuddyPress User's Posts */
 class BuddyPress_Posts_Widget extends WP_Widget {
 	/* Widget setup */
@@ -1138,11 +1085,9 @@ class BuddyPress_Posts_Widget extends WP_Widget {
 		);
 		parent::__construct( 'millionaires_digest_buddypress_posts', __('BuddyPress User\'s Posts','millionaires_digest_widget'), $widget_ops );
 	}
-
 	/* Display the widget */
 	function widget( $args, $instance ) {
 		extract( $args, EXTR_SKIP );
-
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		$limit = $instance['limit'];
 		$length = (int)( $instance['length'] );
@@ -1150,7 +1095,6 @@ class BuddyPress_Posts_Widget extends WP_Widget {
 		$excerpt = isset($instance['excerpt']) ? $instance['excerpt'] : '' ;
 		$cat = $instance['cat'];
 		$post_type = $instance['post_type'];
-
 		global $authordata, $post;
 		$args = array(
             'numberposts' => $limit,
@@ -1158,7 +1102,6 @@ class BuddyPress_Posts_Widget extends WP_Widget {
             'post_type' => $post_type,
 			'suppress_filters' => false
 		);
-
 		$millionaires_digest_recent_posts = get_posts( array(
 			'author' => bp_displayed_user_id(), 
             'numberposts' => $limit,
@@ -1166,7 +1109,6 @@ class BuddyPress_Posts_Widget extends WP_Widget {
             'post_type' => $post_type,
 			'suppress_filters' => false
 		) );
-
 		if ( ! empty( $millionaires_digest_recent_posts ) ) {
 			echo $before_widget;
 			if ( ! empty( $title ) ) {
@@ -1303,7 +1245,5 @@ class BuddyPress_Posts_Widget extends WP_Widget {
 	<?php
 	}
 }
-
-
 
 ?>
