@@ -823,7 +823,7 @@ class BP_My_Groups_Widget extends WP_Widget {
 
 						<div class="item">
 							<div class="item-title"><a href="<?php bp_group_permalink() ?>" title="<?php bp_group_name() ?>"><?php bp_group_name() ?></a></div>
-							<div class="item-meta"><span class="activity"><?php bp_group_member_count() ?></span></div>
+							<div class="item-meta"><span class="activity" data-livestamp="<?php bp_core_iso8601_date( bp_get_group_last_active( 0, array( 'relative' => false ) ) ); ?>"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span></div>
 						</div>
 					</li>
 
