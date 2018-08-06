@@ -559,7 +559,6 @@ class BuddyPress_User_Info_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo $before_widget;
 		echo $before_title
-		     . $instance['title']
 		     . $after_title;
 		self::show_blog_profile( $instance );
 		echo $after_widget;
