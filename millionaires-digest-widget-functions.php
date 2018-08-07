@@ -798,7 +798,7 @@ class BP_My_Groups_Widget extends WP_Widget {
 	
 	function bp_my_groups_widget() {
 		parent::__construct(
-			'buddypress', // Base ID
+			'buddypress_my_groups', // Base ID
 			'BuddyPress My Groups', // Name
 			array( 'description' => __( 'Display the groups of the currently displayed BuddyPress user if on or viewing their profile.', 'text_domain' ) )
 		);
