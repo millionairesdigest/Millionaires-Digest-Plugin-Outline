@@ -1,0 +1,594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Related Translations\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 19:09+0000\n"
+"PO-Revision-Date: 2015-02-07 19:26+0000\n"
+"Last-Translator: Yury Kherimyan\n"
+"Language-Team: Sudavar\n"
+"Language: Greek\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en_US\n"
+"X-Loco-Target-Locale: el_GR\n"
+"X-Loco-Project-Id: 5341\n"
+"X-Loco-Tagged: Birthdays Widget Plugin\n"
+"X-Loco-Api-Version: 1.0.8"
+
+#: class-birthdays-widget-settings.php:210 loco:54d11fa214d725d25b8b4567
+msgid "Access"
+msgstr "Πρόσβαση"
+
+#: class-birthdays-widget-settings.php:704
+#: class-birthdays-widget-settings.php:772 loco:54d11fa214d725d25b8b4568
+msgid "Action"
+msgstr "Ενέργεια"
+
+#: loco:54d11fa214d725d25b8b4576
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: class-birthdays-widget-settings.php:11 loco:54d6608214d725f90a8b4567
+msgid "Birthdays"
+msgstr "Γενέθλια"
+
+#: class-birthdays-widget-settings.php:211 class-birthdays-widget.php:79 loco:#: 54d11fa214d725d25b8b4569
+msgid "Calendar"
+msgstr "Ημερολόγιο"
+
+#: class-birthdays-widget-settings.php:701
+#: class-birthdays-widget-settings.php:769 loco:54d11fa214d725d25b8b456a
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: class-birthdays-widget-settings.php:754 loco:54d11fa214d725d25b8b456b
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: class-birthdays-widget-settings.php:343
+#: class-birthdays-widget-settings.php:372 loco:54d11fa214d725d25b8b4587
+msgid "Disabled"
+msgstr "Απενεργοποίηση"
+
+#: class-birthdays-widget-settings.php:936 loco:54d11fa214d725d25b8b456c
+msgid "Download"
+msgstr "Λήψη"
+
+#: class-birthdays-widget-settings.php:780 loco:54d11fa214d725d25b8b456d
+msgid "Editing"
+msgstr "Υπό επεξεργασία"
+
+#: class-birthdays-widget-settings.php:702
+#: class-birthdays-widget-settings.php:770 loco:54d11fa214d725d25b8b456e
+msgid "Email"
+msgstr "Email"
+
+#: class-birthdays-widget-settings.php:342
+#: class-birthdays-widget-settings.php:373 loco:54d11fa214d725d25b8b458b
+msgid "Enabled"
+msgstr "Ενεργοποίηση"
+
+#: class-birthdays-widget-settings.php:14 loco:54d6608214d725f90a8b4569
+msgid "Export"
+msgstr "Εξαγωγή"
+
+#: class-birthdays-widget-settings.php:871
+#: class-birthdays-widget-settings.php:883 loco:54d11fa214d725d25b8b456f
+msgid "File"
+msgstr "Αρχείο"
+
+#: class-birthdays-widget-settings.php:703
+#: class-birthdays-widget-settings.php:771 loco:54d11fa214d725d25b8b4570
+msgid "Image"
+msgstr "Εικόνα"
+
+#: class-birthdays-widget-settings.php:13 loco:54d6608214d725f90a8b4568
+msgid "Import"
+msgstr "Εισαγωγή"
+
+#: class-birthdays-widget.php:78 loco:54d6608214d725f90a8b456a
+msgid "List"
+msgstr "Λίστα"
+
+#: class-birthdays-widget-settings.php:522
+#: class-birthdays-widget-settings.php:525 loco:54d65b3714d725c2098b4568
+msgid "Mode"
+msgstr "Λειτουργία"
+
+#: class-birthdays-widget-settings.php:700
+#: class-birthdays-widget-settings.php:768 loco:54d11fa214d725d25b8b4571
+msgid "Name"
+msgstr "Όνομα"
+
+#: class-birthdays-widget-settings.php:784 loco:54d11fa214d725d25b8b4572
+msgid "New"
+msgstr "Νέο"
+
+#: class-birthdays-widget-settings.php:569
+#: class-birthdays-widget-settings.php:847 loco:54d11fa214d725d25b8b4573
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: class-birthdays-widget.php:74 loco:54d11fa214d725d25b8b4574
+msgid "Template"
+msgstr "Θέμα"
+
+#: class-birthdays-widget.php:68 loco:54d11fa214d725d25b8b4575
+msgid "Title"
+msgstr "Τίτλος"
+
+#: class-birthdays-widget-settings.php:212 class-birthdays-widget.php:80 loco:#: 54d65b3714d725c2098b4567
+msgid "Upcoming"
+msgstr "Μελλοντικά Γενέθλια"
+
+#: class-birthdays-widget-settings.php:632 loco:54d11fa214d725d25b8b4577
+msgid "Add New"
+msgstr "Προσθήκη "
+
+#: class-birthdays-widget-settings.php:856 loco:54d11fa214d725d25b8b4578
+msgid "Are you sure you want to delete this record?"
+msgstr "Σίγουρα θέλετε να διαγράψετε την εγγραφή?"
+
+#: class-birthdays-widget-settings.php:287 loco:54d11fa214d725d25b8b4579
+msgid "Birthday for WordPress Users"
+msgstr "Γενέθλια για τους Χρήστες του WordPress"
+
+#: class-birthdays-widget-settings.php:219
+#: class-birthdays-widget-settings.php:222 loco:54d11fa214d725d25b8b457a
+msgid "Birthday \"wish\""
+msgstr "\"Ευχή\" Γενεθλίων"
+
+#. Plugin Name of the plugin/theme
+#: class-birthdays-widget.php:13 loco:54d11fa214d725d25b8b457b
+msgid "Birthdays Widget"
+msgstr "Birthdays Widget"
+
+#: class-birthdays-widget-settings.php:631 loco:54d11fa214d725d25b8b457c
+msgid "Birthdays Widget - List of Birthdays"
+msgstr "Widget Γενεθλίων - Λίστα Γενεθλίων"
+
+#: class-birthdays-widget-settings.php:52 loco:54d11fa214d725d25b8b457d
+msgid "Birthdays Widget Options "
+msgstr "Επιλογές του πρόσθετου Birthdays Widget"
+
+#. Description of the plugin/theme
+#: loco:54d65b3714d725c2098b4572
+msgid ""
+"Birthdays widget plugin produces a widget which displays a customizable happy "
+"birthday image and wish to your clients/users."
+msgstr ""
+"Birthdays widget plugin produces a widget which displays a customizable happy "
+"birthday image and wish to your clients/users."
+
+#: class-birthdays-widget-settings.php:470
+#: class-birthdays-widget-settings.php:473 loco:54d11fa214d725d25b8b457e
+msgid "Calendar Color #1"
+msgstr "Χρώμα 1ο"
+
+#: class-birthdays-widget-settings.php:502
+#: class-birthdays-widget-settings.php:505 loco:54d11fa214d725d25b8b457f
+msgid "Calendar Color #2"
+msgstr "Χρώμα 2ο"
+
+#: class-birthdays-widget-settings.php:329 loco:54d11fa214d725d25b8b4580
+msgid ""
+"Careful! The meta you select must be present in every WP User you set a "
+"birthday, otherwise nothing will be displayed."
+msgstr ""
+"Προσοχή! Κάθε WordPress χρήστης πρέπει να έχει αυτό το πεδίο, διαφορετικά δεν "
+"θα εμφανιστεί κάτι για τον συγκεκριμένο χρήστη."
+
+#: class-birthdays-widget-settings.php:460 loco:54d11fa214d725d25b8b4581
+msgid "Colour for birthdays in Calendar Widget"
+msgstr "Χρώμα των ημερών με γενέθλια στο ημερολόγιο"
+
+#: class-birthdays-widget-settings.php:246
+#: class-birthdays-widget-settings.php:249 loco:54d11fa214d725d25b8b4582
+msgid "Comma between names"
+msgstr "Κόμμα ανάμεσα στα ονόματα"
+
+#: class-birthdays-widget-settings.php:528
+#: class-birthdays-widget-settings.php:554
+#: class-birthdays-widget-settings.php:557 loco:54d65b3714d725c2098b4569
+msgid "Consecutive days"
+msgstr "Συνεχόμενες μέρες"
+
+#: class-birthdays-widget-settings.php:867 loco:54d11fa214d725d25b8b4583
+msgid ""
+"CSV must have format &lt;name&gt;,&lt;date&gt; where &lt;name&gt; a string "
+"and &lt;date&gt; as Y-m-D"
+msgstr ""
+"Η μορφοποίηση του αρχείου CSV πρέπει να είναι &lt;όνομα&gt;,&lt;ημερομηνία&gt; "
+"όπου &lt;όνομα&gt; αλφαρηθμιτικό και &lt;ημερομηνία&gt; υπό μορφή Έτος-Μήνας-"
+"Μέρα"
+
+#: class-birthdays-widget-settings.php:457 loco:54d11fa214d725d25b8b4584
+msgid "Current Day Color"
+msgstr "Χρώμα Τρέχουσας Ημέρας"
+
+#: class-birthdays-widget-settings.php:529
+#: class-birthdays-widget-settings.php:541
+#: class-birthdays-widget-settings.php:544 loco:54d65b3714d725c2098b456a
+msgid "Days with birthdays"
+msgstr "Μέρες με γενέθλια"
+
+#: class-birthdays-widget-settings.php:534 loco:54d65b3714d725c2098b456d
+msgid ""
+"Days with birthdays could be 1rst February, 3rd March, 15th March ... etc, "
+"based on the birthdays in your list"
+msgstr ""
+"Μέρες με γενέθλια μπορούν να είναι 1 Φεβρουαρίου, 3 Μαρτίου, 15 Μαρτίου ... "
+"κλπ, ανάλογα με τα γενέθλια στην λίστα σας"
+
+#: loco:54d665d014d72518058b4570
+msgid "Default"
+msgstr "Προεπιλογή"
+
+#: class-birthdays-widget-settings.php:633 loco:54d11fa214d725d25b8b4585
+msgid "Delete All"
+msgstr "Διαγραφή Όλων"
+
+#: class-birthdays-widget-settings.php:293 loco:54d11fa214d725d25b8b4586
+msgid "Disable Image"
+msgstr "Απενεργοποίηση Εικόνας"
+
+#: class-birthdays-widget-settings.php:310 loco:54d11fa214d725d25b8b4588
+msgid "Disabled birthday field for WordPress Users"
+msgstr "Απενεργοποίηση γενεθλίων για τους WordPress Χρήστες"
+
+#: class-birthdays-widget-settings.php:297 loco:54d11fa214d725d25b8b4589
+msgid "Draw birthday of WordPress Users from the "
+msgstr "Για τα γενέθλια των WordPress Χρηστών, χρήση της τιμής του "
+
+#: class-birthdays-widget-settings.php:293 loco:54d11fa214d725d25b8b458a
+msgid "Enable Image"
+msgstr "Ενεργοποίηση Εικόνας"
+
+#: class-birthdays-widget-settings.php:533 loco:54d65b3714d725c2098b456c
+msgid ""
+"Ex: Consecutive days would be 1rst February, 2nd February, 3rd February ... "
+"etc"
+msgstr ""
+"Πχ: Συνεχόμενες μέρες μπορούν να είναι 1 Φεβρουαρίου, 2 Φεβρουαρίου, 3 "
+"Φεβρουαρίου ... κλπ"
+
+#: class-birthdays-widget-settings.php:931 loco:54d11fa214d725d25b8b458c
+msgid "Export Birthday List Page"
+msgstr "Σελίδα εξαγωγής Λίστας Γενεθλίων"
+
+#: class-birthdays-widget-settings.php:932 loco:54d11fa214d725d25b8b458d
+msgid "Export WordPress Users"
+msgstr "Εξαγωγή χρηστών WordPress"
+
+#: class-birthdays-widget-settings.php:231
+#: class-birthdays-widget-settings.php:234 loco:54d11fa214d725d25b8b458e
+msgid "Fields in Registration Form"
+msgstr "Πεδία στην Φόρμα Εγγραφής Χρήστη"
+
+#: birthday-widget.php:93 loco:54d11fa214d725d25b8b458f
+msgid "First Name"
+msgstr "Όνομα"
+
+#: class-birthdays-widget-settings.php:336
+#: class-birthdays-widget-settings.php:339 loco:54d11fa214d725d25b8b4590
+msgid "Gravatar's profile image"
+msgstr "Εικόνα προφίλ από το Gravatar"
+
+#: class-birthdays-widget-installer.php:40
+#: class-birthdays-widget-installer.php:100
+#: class-birthdays-widget-settings.php:169 loco:54d11fa214d725d25b8b4591
+msgid "Happy Birthday"
+msgstr "Χρόνια Πολλά"
+
+#: class-birthdays-widget.php:14 loco:54d11fa214d725d25b8b4592
+msgid "Happy birthday widget"
+msgstr ""
+
+#: class-birthdays-widget-settings.php:883 loco:54d11fa214d725d25b8b4593
+msgid " has been uploaded. "
+msgstr " μεταφορτώθηκε."
+
+#: class-birthdays-widget-settings.php:444 loco:54d11fa214d725d25b8b4594
+msgid ""
+"Here you can select which roles of your website can have access to page "
+"editing/viewing the birthday list."
+msgstr ""
+"Εδώ μπορείτε να επιλέξετε ποιοι ρόλοι της σελίδας σας θα έχουν πρόσβαση στη "
+"λίστα γενεθλίων για επεξεργασία."
+
+#: class-birthdays-widget-settings.php:866 loco:54d11fa214d725d25b8b4595
+msgid "Here you can upload a CSV file with your own data or from a plugin-export."
+msgstr ""
+"Εδώ μπορείτε να μεταφορτώσετε ένα αρχείο CSV με τα δικάς δεδομένα ή παραγμένο "
+"από προηγούμενη εξαγωγή του πρόσθετου."
+
+#. Author URI of the plugin/theme
+#: loco:54d65b3714d725c2098b4574
+msgid "http://www.codescar.eu"
+msgstr "http://www.codescar.eu"
+
+#. Plugin URI of the plugin/theme
+#: loco:54d65b3714d725c2098b4571
+msgid "https://wordpress.org/plugins/birthdays-widget/"
+msgstr "https://wordpress.org/plugins/birthdays-widget/"
+
+#: class-birthdays-widget-settings.php:346 loco:54d11fa214d725d25b8b4596
+msgid ""
+"If disabled images for WordPress Users will be handled with WordPress Media "
+"Manager."
+msgstr ""
+"Εάν απενεργοποιηθεί, οι εικόνες των Χρηστών WordPress θα επιλέγονται από την "
+"Συλλογή."
+
+#: class-birthdays-widget-settings.php:495 loco:54d11fa214d725d25b8b4597
+msgid "If you have consecutive days with birthdays and don't want the same color"
+msgstr "Εάν υπάρχουν συνεχόμενες μέρες με γενέθλια και δεν θέλετε το ίδιο χρώμα"
+
+#: class-birthdays-widget-settings.php:257 loco:54d11fa214d725d25b8b4598
+msgid ""
+"If you want space between the names but no comma, consider adding a CSS rule "
+"to class "
+msgstr ""
+"Εάν θέλετε κενό μεταξύ των ονομάτων αλλά όχι κόμμα, προσθέστε τον κατάλληλο "
+"κανόνα CSS στη κλάση "
+
+#: class-birthdays-widget-settings.php:209 loco:54d11fa214d725d25b8b4599
+msgid "Image Settings"
+msgstr "Ρυθμίσεις εικόνας"
+
+#: class-birthdays-widget-settings.php:433 loco:54d11fa214d725d25b8b459a
+msgid "Images in list template"
+msgstr "Εικόνες στο θέμα λίστα"
+
+#: class-birthdays-widget-settings.php:865 loco:54d11fa214d725d25b8b459b
+msgid "Import Birthday List Page"
+msgstr "Σελίδα Εισαγωγής Γενεθλίων"
+
+#: class-birthdays-widget-settings.php:933 loco:54d11fa214d725d25b8b459c
+msgid "In order to download the export file press "
+msgstr "Για να κατεβάσετε το αρχείο εγγραφών πατήστε"
+
+#: class-birthdays-widget-settings.php:396
+#: class-birthdays-widget-settings.php:419 loco:54d11fa214d725d25b8b459d
+msgid "Leaving this field empty will revert to the default image."
+msgstr "Αφήνοντας κενό αυτό το πεδίο, επιλέγετε την προεπιλεγμένη εικόνα."
+
+#. Author of the plugin/theme
+#: loco:54d65b3714d725c2098b4573
+msgid "lion2486, Sudavar"
+msgstr "lion2486, Sudavar"
+
+#: class-birthdays-widget-settings.php:868 loco:54d11fa214d725d25b8b459e
+msgid "Make sure that the imported file is encoded in UTF-8."
+msgstr "Σιγουρευτείτε πως το αρχείο εισαγωγής είναι κωδικοποιημένο σε UTF-8."
+
+#: class-birthdays-widget-settings.php:305 loco:54d11fa214d725d25b8b459f
+msgid " meta field of WordPress User Profile"
+msgstr "ειδικού πεδίου από το Προφίλ Χρήστη"
+
+#: class-birthdays-widget-settings.php:315
+#: class-birthdays-widget-settings.php:318 loco:54d11fa214d725d25b8b45a0
+msgid "Meta value as name"
+msgstr "Τιμή ειδικού πεδίου για όνομα Χρήστη"
+
+#: class-birthdays-widget-settings.php:240 loco:54d11fa214d725d25b8b45a1
+msgid "Name and Birthday fields at WordPress User Registration Form"
+msgstr "Όνομα και Ημερομηνία Γενεθλίων Χρήστη στη Φόρμα Εγγραφής Χρήστη"
+
+#: class-birthdays-widget.php:217 loco:54d11fa214d725d25b8b45a2
+msgid ""
+"Only one calendar template is available per page. Please check your widget "
+"and shortcode options."
+msgstr ""
+"Μόνο ένα ημερολόγιο δύναται να εμφανιστεί ανά σελίδα. Παρακαλώ ελέξτε τις "
+"ρυθμίσεις σας."
+
+#: loco:54d666b914d72518058b4572
+msgid "Options"
+msgstr "Ρυθμίσεις"
+
+#: class-birthdays-widget-settings.php:194 loco:54d11fa214d725d25b8b45a3
+msgid "Options successfully updated."
+msgstr "Οι επιλογές σας ενημερώθηκαν."
+
+#: class-birthdays-widget-settings.php:578 loco:54d11fa214d725d25b8b45a4
+msgid "or you can click on our birthday button."
+msgstr "ή μπορείτε να πατήσετε το κουμπί γενεθλίων."
+
+#: birthday-widget.php:163 loco:54d11fa214d725d25b8b45a5
+msgid "Please enter user's birthday requested by birthdays widget"
+msgstr ""
+"Παρακαλώ εισάγετε τα γενέθλια του χρήστη καθώς ζητούνται από το πρόσθετο "
+"Birthdays Widget"
+
+#: class-birthdays-widget-settings.php:637
+#: class-birthdays-widget-settings.php:673 loco:54d11fa214d725d25b8b45a6
+msgid "Please fill all the boxes!"
+msgstr "Παρακαλώ συμπληρώστε τα πεδία!"
+
+#: class-birthdays-widget-settings.php:574 loco:54d11fa214d725d25b8b45a7
+msgid "Plugin Version "
+msgstr "Έκδοση Πρόσθετου"
+
+#: class-birthdays-widget-settings.php:823
+#: class-birthdays-widget-settings.php:831 loco:54d65b3714d725c2098b4570
+msgid "+"
+msgstr "+"
+
+#: class-birthdays-widget-settings.php:645 loco:54d11fa214d725d25b8b45a8
+msgid "Query error"
+msgstr "Πρόβλημα στο ερώτημα βάσης"
+
+#: class-birthdays-widget-settings.php:912 loco:54d11fa214d725d25b8b45a9
+msgid " records inserted!"
+msgstr " εγγραφές έχουν εισαχθεί."
+
+#: class-birthdays-widget-settings.php:292 loco:54d11fa214d725d25b8b45aa
+msgid ""
+"Save birthday of WordPress Users in our table and show birthday field in "
+"WordPress Profile Page"
+msgstr ""
+"Αποθήκευση των γενεθλίων των WordPress χρηστών στον δικό μας πίνακα και "
+"εμφάνιση πεδίου στο Προφίλ Χρήστη"
+
+#: class-birthdays-widget-settings.php:484
+#: class-birthdays-widget-settings.php:487 loco:54d11fa214d725d25b8b45ab
+msgid "Second Color"
+msgstr "Δεύτερο Χρώμα"
+
+#: class-birthdays-widget-settings.php:919 loco:54d11fa214d725d25b8b45ac
+msgid "Select a file first!"
+msgstr "Πρώτα επιλέξτε αρχείο!"
+
+#: class-birthdays-widget-settings.php:403
+#: class-birthdays-widget-settings.php:406 loco:54d11fa214d725d25b8b45ad
+msgid "Select default User image"
+msgstr "Διαλέξτε την προεπιλεγμένη εικόνα Χρήστη"
+
+#: class-birthdays-widget-settings.php:274 loco:54d11fa214d725d25b8b45ae
+msgid "Select if you want age of Users to be displayed"
+msgstr "Διαλέξτε αν θέλετε να εμφανίζεται η ηλικία των Χρηστών"
+
+#: class-birthdays-widget-settings.php:255 loco:54d11fa214d725d25b8b45af
+msgid "Select if you want comma (,) to be displayed between the names in widget"
+msgstr "Διαλέξτε αν θέλετε να εμφανίζεται κόμμα(,) ανάμεσα στα ονόματα"
+
+#: class-birthdays-widget-settings.php:493 loco:54d11fa214d725d25b8b45b0
+msgid "Select if you want the colors of days marked with birthdays to change"
+msgstr "Διαλέξτε αν θέλετε να εναλλάσσονται τα χρώματα των ημερών με γενέθλια"
+
+#: class-birthdays-widget-settings.php:531 loco:54d65b3714d725c2098b456b
+msgid ""
+"Select if you want the plugin to display # consecutive days from the current "
+"day or search for days with birthdays."
+msgstr ""
+"Επιλέξτε αν θέλετε το πρόσθετο να εμφανίζει τάδε συνεχόμενες μέρες από την "
+"τωρινή μέρα ή να εμφανίζει μελλοντικές μέρες με γενέθλια."
+
+#: class-birthdays-widget-settings.php:388
+#: class-birthdays-widget-settings.php:411 loco:54d11fa214d725d25b8b45b1
+msgid "Select Image"
+msgstr "Επιλέξτε εικόνα"
+
+#: class-birthdays-widget-settings.php:561 loco:54d65b3714d725c2098b456f
+msgid "Select number of consecutive days displayed in upcoming view"
+msgstr "Επιλέξτε τον αριθμό συνεχόμενων ημερών"
+
+#: class-birthdays-widget-settings.php:548 loco:54d65b3714d725c2098b456e
+msgid "Select number of days with birthdays displayed in upcoming view"
+msgstr "Επιλέξτε τον αριθμό ημερών με γενέθλια"
+
+#: class-birthdays-widget-settings.php:464 loco:54d11fa214d725d25b8b45b2
+msgid "Select the color of current day in Calendar view of widget"
+msgstr "Διαλέξτε το χρώμα της τρέχουσας μέρας στην ημερολογιακή εμφάνιση του widget"
+
+#: class-birthdays-widget-settings.php:477 loco:54d11fa214d725d25b8b45b3
+msgid "Select the color of days marked with birthdays in Calendar view of widget"
+msgstr "Διαλέξτε το χρώμα που θέλετε να "
+
+#: class-birthdays-widget-settings.php:380
+#: class-birthdays-widget-settings.php:383 loco:54d11fa214d725d25b8b45b4
+msgid "Select the image displayed on top of widget"
+msgstr "Διαλέξτε την εικόνα που εμφανίζεται στην κορυφή του widget"
+
+#: class-birthdays-widget-settings.php:284 loco:54d11fa214d725d25b8b45b5
+msgid "Select the image you want for the birthdays widget"
+msgstr "Επιλέξτε την εικόνα που θέλετε για το Widget Γενεθλίων"
+
+#: class-birthdays-widget-settings.php:509 loco:54d11fa214d725d25b8b45b6
+msgid "Select the second color to be displayed for consecutive days"
+msgstr "Διαλέξτε το 2ο χρώμα που θα εμφανίζεται στις συνεχόμενες μέρες"
+
+#: class-birthdays-widget-settings.php:327 loco:54d11fa214d725d25b8b45b7
+msgid ""
+"Select which Wordpress User's meta value you like to be shown as name in "
+"widget"
+msgstr ""
+"Επιλέξτε ποιο ειδικό πεδίο από το Προφίλ Χρήστη θέλετε να χρησιμοποιήσετε σαν "
+"Όνομα Χρήστη στο πρόσθετο"
+
+#: class-birthdays-widget-settings.php:426 loco:54d11fa214d725d25b8b45b8
+msgid "Set the width"
+msgstr "Θέστε το πλάτος"
+
+#: class-birthdays-widget-settings.php:429 loco:54d11fa214d725d25b8b45b9
+msgid "Set the width of "
+msgstr "Θέσε το πλάτος της"
+
+#: class-birthdays-widget-settings.php:575 loco:54d11fa214d725d25b8b45ba
+msgid "<b>Shortcode</b> is also available for use in posts or pages: "
+msgstr "Επίσης υπάρχει διαθέσιμο <b>Shortcode</b> για χρήση σε άρθα και σελίδες:"
+
+#: class-birthdays-widget-settings.php:265
+#: class-birthdays-widget-settings.php:268 loco:54d11fa214d725d25b8b45bb
+msgid "Show User's age"
+msgstr "Εμφάνιση Ηλικίας Χρήστη"
+
+#: class-birthdays-widget-settings.php:666 loco:54d11fa214d725d25b8b45bc
+msgid "The record was deleted!"
+msgstr "Η εγγραφή διαγράφηκε!"
+
+#: class-birthdays-widget-settings.php:680 loco:54d11fa214d725d25b8b45bd
+msgid "The record was updated!"
+msgstr "Η εγγραφή ενημερώθηκε!"
+
+#: class-birthdays-widget-settings.php:661 loco:54d11fa214d725d25b8b45be
+msgid "There was an error!"
+msgstr "Εμφανίστηκε κάποιο σφάλμα!"
+
+#: class-birthdays-widget-settings.php:916 loco:54d11fa214d725d25b8b45bf
+msgid "There was an error uploading the file, please try again!"
+msgstr "Υπήρξε σφάλμα κατά τη μεταφόρτωση του αρχείου, παρακαλώ προσπαθήστε ξανά!"
+
+#: birthday-widget.php:96 birthday-widget.php:156 loco:54d11fa214d725d25b8b45c0
+msgid "User Birthday"
+msgstr "Γενέθλια Χρήστη"
+
+#. Tags of the plugin/theme
+#: loco:54d65b3714d725c2098b4575
+msgid ""
+"widget, birthdays, custom birthday list, WordPress User birthday, birthday "
+"calendar"
+msgstr ""
+"widget, birthdays, custom birthday list, WordPress User birthday, birthday "
+"calendar"
+
+#: class-birthdays-widget-settings.php:431 loco:54d11fa214d725d25b8b45c1
+msgid "Widget's image"
+msgstr "Εικόνας του Widget"
+
+#: class-birthdays-widget-settings.php:208 loco:54d11fa214d725d25b8b45c2
+msgid "WordPress User"
+msgstr "Χρήστης WordPress"
+
+#: class-birthdays-widget-settings.php:225 loco:54d11fa214d725d25b8b45c3
+msgid "Write your custom \"wish\""
+msgstr "Γράψτε την  \"ευχή\" που επιθυμείτε"
+
+#: class-birthdays-widget-settings.php:890 loco:54d11fa214d725d25b8b45c4
+msgid "Wrong CSV format!<br />"
+msgstr "Λάθος μορφοποίηση του αρχείου CSV<br />"
+
+#: class-birthdays-widget.php:197 class-birthdays-widget.php:209
+#: class-birthdays-widget.php:274 class-birthdays-widget.php:362 loco:#: 54d11fa214d725d25b8b45c5
+msgid "years old"
+msgstr "χρονών"
+
+#: class-birthdays-widget-settings.php:577 loco:54d11fa214d725d25b8b45c6
+msgid "You can either add it your self, "
+msgstr "Μπορείτε είτε να το εισάγετε μόνοι σας"
+
+#: class-birthdays-widget-settings.php:48
+#: class-birthdays-widget-settings.php:626
+#: class-birthdays-widget-settings.php:862
+#: class-birthdays-widget-settings.php:927 loco:54d11fa214d725d25b8b45c7
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης στη σελίδα."
+
+#: class-birthdays-widget-settings.php:643 loco:54d11fa214d725d25b8b45c8
+msgid "Your new record was added!"
+msgstr "Η εγγραφή σας προστέθηκε!"
